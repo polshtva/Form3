@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+<body>
+    <form>
+        <h1>Регистрация на мероприятие</h1>
+        Имя: <input type="text" name="username" placeholder="Введите имя"> <br><br>
+        Фамилия: <input type="text" name="lastname" required placeholder="Введите фамилию"> <br><br>
+        Номер телефона: <input type="tel" name="phone"><br><br>
+        Электронная почта: <input type="email" name="email"><br><br>
+        
+  
+        <fieldset>
+            <legend>Виды мероприятий:</legend>
+            <label>
+                <input type="checkbox" name="event" value="camp" checked>Поход
+            </label> <br>
+            <label>
+                <input type="checkbox" name="event" value="theatre" disabled>Театр
+            </label> <br>
+            <label>
+                <input type="checkbox" name="event" value="cinema" autofocus>Кино
+            </label>
+            <br>
+        </fieldset>
+
+        <h3>Время мероприятия</h3>
+        <label><input type="radio" name="time" value="morning">Утро</label> <br>
+        <label><input type="radio" name="time" value="afternoon">День</label> <br>
+        <label><input type="radio" name="time" value="evening">Вечер</label> <br>
+
+        <h3>Тип мероприятия</h3>
+        <select name="typeEvent" multiple>
+            <option value="" selected disabled>Выберите тип мероприятия</option>
+            <option value="conference">Конференция</option>
+            <option value="masterClass">Мастер-класс</option>
+            <option value="webinar">Вебинар</option>
+        </select>
+
+
+        <h3>Расскажите о себе:</h3>
+        <textarea name="comment"></textarea>
+
+
+        <br><br>
+        <button type="submit">Отправить данные</button> 
+        <button type="reset">Очистить данные</button>
+
+    </form>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
